@@ -2,9 +2,9 @@ import React from 'react'
 
 function App() {
   return (
-    <div>
+    <div className='p-4'>
       <form action="">
-        <input type="text" placeholder='name' />
+        <input className='border-4' type="text" placeholder='name' />
         <input type="submit" />
       </form>
     </div>
