@@ -3,7 +3,10 @@ import React from 'react'
 function App() {
   return (
     <div>
-      <h1 className='text-blue-500'>Hello</h1>
+      <form action="">
+        <input type="text" placeholder='name' />
+        <input type="submit" />
+      </form>
     </div>
   )
 }
