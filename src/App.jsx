@@ -1,13 +1,15 @@
 import React, { useRef } from 'react'
 
 function App() {
-  const elem = useRef(null);
+  const name = useRef(null);
+  const age = useRef(null);
+  
   return (
-    <div>
-      <div ref={elem} className='p-4'>
-        <h1>hello</h1>
-      </div>
-    </div>
+    <form action="">
+      <input ref={name} placeholder='name' type="text" />
+      <input ref={age} placeholder='age' type="text" />
+      <input type="submit" />
+    </form>
   )
 }
 
