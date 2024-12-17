@@ -5,7 +5,7 @@ function App() {
   const age = useRef(null);
   
   return (
-    <form action="">
+    <form action="" onSubmit={(event)=>event.preventDefault()}>
       <input ref={name} placeholder='name' type="text" />
       <input ref={age} placeholder='age' type="text" />
       <input type="submit" />
