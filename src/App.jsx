@@ -6,6 +6,7 @@ function App() {
   
   const handleSubmit = (event)=>{
     event.preventDefault();
+    console.log(name.current.value, age.current.value)
   }
 
   return (
