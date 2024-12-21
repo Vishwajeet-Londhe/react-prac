@@ -28,10 +28,15 @@ import { useState } from 'react'
 function App() {
   const [val, setVal] = useState({name:""})
   
+  const handleSubmit = (event)=>{
+    event.preventDefault();
+  }
+
   return (
     <div>
-      <form action="">
+      <form action="" onSubmit={handleSubmit}>
         <input onChange={(event)=>setVal({name:event.target.value})} type="text" placeholder='name' />
+        <input type="submit" />
       </form>
     </div>
   )
