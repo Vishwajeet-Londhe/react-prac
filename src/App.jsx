@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       <form action="">
-        <input onChange={(event)=>console.log(event.target.value)} type="text" placeholder='name' />
+        <input onChange={(event)=>setVal({name:event.target.value})} type="text" placeholder='name' />
       </form>
     </div>
   )
