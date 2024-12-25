@@ -1,3 +1,5 @@
+//useRef
+
 // import React, { useRef } from 'react'
 
 // function App() {
@@ -22,25 +24,27 @@
 
 // export default App
 
-import React from 'react'
-import { useState } from 'react'
+//controlled components
 
-function App() {
-  const [val, setVal] = useState({name:""})
+// import React from 'react'
+// import { useState } from 'react'
+
+// function App() {
+//   const [val, setVal] = useState({name:""})
   
-  const handleSubmit = (event)=>{
-    event.preventDefault();
-    console.log(val);
-  }
+//   const handleSubmit = (event)=>{
+//     event.preventDefault();
+//     console.log(val);
+//   }
 
-  return (
-    <div>
-      <form action="" onSubmit={handleSubmit}>
-        <input onChange={(event)=>setVal({name:event.target.value})} type="text" placeholder='name' />
-        <input type="submit" />
-      </form>
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       <form action="" onSubmit={handleSubmit}>
+//         <input onChange={(event)=>setVal({name:event.target.value})} type="text" placeholder='name' />
+//         <input type="submit" />
+//       </form>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
